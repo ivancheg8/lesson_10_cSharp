@@ -8,7 +8,8 @@ int FindWordByVowel(string[] words) //простой перебор
 {
     int count = 0;
     for (int i = 0; i < words.Length; i++)
-        if (words[i].ToLower()[0] == 'a' || words[i][0] == 'e' || words[i][0] == 'i' || words[i][0] == 'o' || words[i][0] == 'u' || words[i][0] == 'y') count++;
+        if (words[i].ToLower()[0] == 'a' || words[i].ToLower()[0] == 'e' || words[i].ToLower()[0] == 'i' || words[i].ToLower()[0] == 'o' || words[i].ToLower()[0] == 'u' || words[i].ToLower()[0] == 'y')
+            count++;
     return count;
 }
 Console.WriteLine(FindWordByVowel(names));
